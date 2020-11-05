@@ -1,0 +1,151 @@
+
+
+/*=============================================
+=            TYPHOGRAPHY            =
+=============================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: bold;
+  src: url('../../../build/fonts/poppins-thin-webfont.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../../../build/fonts/poppins.woff')format('woff'),
+    /* Pretty Modern Browsers */
+    url('../../../build/fonts/poppins.ttf')format('truetype'),
+    /* Safari, Android, iOS */
+    url('../../../build/fonts/poppins-thin-webfont.svg') format('svg');
+  /* Legacy iOS */
+}
+
+/*=============================================
+=            BACKGROUD COLOR           =
+=============================================*/
+
+.bg-main {
+  background: $main;
+}
+
+.bg-secondary {
+  background-color: $main-secondary;
+}
+
+.bg-grey {
+  background: #F4F4F4;
+}
+
+.bg-white {
+  background: white;
+  background: white;
+  border: 1px solid #8080802e;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/*=====  End of Section comment block  ======*/
+
+
+/*=============================================
+=            TEXT COLOR            =
+=============================================*/
+
+.text-blue {
+  color: $main-blue !important;
+}
+
+.text-pink {
+  color: $main !important;
+}
+
+.text-main {
+  color: $main !important;
+}
+
+.text-secondary {
+  color: $main-secondary !important;
+}
+
+.text-cyan {
+  color: $main-cyan !important;
+}
+
+.text-primary {
+  color: $main !important;
+}
+
+.text-grey {
+  color: $main-grey !important;
+}
+
+.text-dark {
+  color: $main-dark !important;
+}
+
+/*=====  E TEXT COLOR  END  ======*/
+
+
+/*=============================================
+=            FONT WEIGHT            =
+=============================================*/
+
+.ut_bold {
+  font-weight: 700;
+}
+.ut_thin {
+  font-weight: 300;
+}
+
+/*=====  End of Section comment block  ======*/
+
+
+
+/*=============================================
+=            FONT SIZE            =
+=============================================*/
+
+.text_B {
+  font-size: 60px;
+}
+.text_M {
+  font-size: 40px;
+}
+.text_Md {
+  font-size: 25px;
+}
+.text-sm {
+  font-size: 16px;
+}
+.text-smavg {
+  font-size: 18px;
+}
+.text-xs {
+  font-size: 12px;
+}
+
+/*=====  End of Section comment block  ======*/
+
+p {
+  line-height: 22px;
+  font-size: 13px;
+  color: grey;
+}
+
+:root {
+  --space-unit: 1em;
+  --space-xxxxs: calc(0.125 * var(--space-unit));
+  --space-xxxs: calc(0.25 * var(--space-unit));
+  --space-xxs: calc(0.375 * var(--space-unit));
+  --space-xs: calc(0.5 * var(--space-unit));
+  --space-sm: calc(0.75 * var(--space-unit));
+  --space-md: calc(1.25 * var(--space-unit));
+  --space-lg: calc(2 * var(--space-unit));
+  --space-xl: calc(3.25 * var(--space-unit));
+  --space-xxl: calc(5.25 * var(--space-unit));
+  --space-xxxl: calc(8.5 * var(--space-unit));
+  --space-xxxxl: calc(13.75 * var(--space-unit));
+  --component-padding: var(--space-md);
+}
+
+/*=====  END TYPHOGRAPHY   ======*/

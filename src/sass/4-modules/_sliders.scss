@@ -1,0 +1,74 @@
+
+
+/*=============================================
+=            SLIDER CSS START           =
+=============================================*/
+#sl {
+    .slOw {
+        position: relative;
+        // &::after {
+        //     content: "";
+        //     height: 200px;
+        //     width: 100%;
+        //     position: absolute;
+        //     bottom: 0;
+        //     z-index: 3;
+        //     background:linear-gradient(0deg, rgba(255,255,255,1) 38%, rgba(255,255,255,0) 100%);
+        // }
+        &__is {
+            display: flex;
+            flex-flow: row wrap; 
+        }
+        // &__right {
+        //     position: relative;
+        //     flex:1;
+        //     order:2;
+        //     img {
+        //         max-width: 90%;
+        //         z-index: 2;
+        //     }
+        //     .shape {
+        //         width: 50%;
+        //         height: 50%;
+        //         position: absolute;
+        //         top: 50%;
+        //         transform: translate(-50%,-50%);
+        //         left: 50%;
+        //         background: $main;
+        //         border-radius:50%;
+        //         z-index: -1;
+        //     }
+        // }
+        // &__left {
+        //     flex:1;
+        //     order:1;
+        //     padding-top: 100px;
+        //     img {
+        //         max-width: 50%;
+        //     }
+        // }
+        // &__cap {
+        //     //@extend .tf_bt;
+
+        //     z-index: 99;
+
+        //     h2 {
+        //         font-family: 'Montserrat', sans-serif;
+        //         font-size: 60px;
+        //         font-weight: 800;
+        //         color: black;
+        //     }
+        //     p {
+        //         color: gray;
+        //     }
+        // }
+
+        // &__typho {
+        //     line-height: 28px;
+        // }
+    }
+
+}
+
+/*=====  SLIDER CSS END  ======*/
+

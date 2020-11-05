@@ -1,0 +1,30 @@
+.order-prices {
+    margin-bottom: 25px;
+
+    &__item {
+        margin: 0 0 8px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-align: center;
+        align-items: center;
+        font-weight: 700;
+        line-height: 1.2;
+
+        &--number {
+            color: #ee3e80;
+
+        }
+    }
+}
+.border-block {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: #eee solid 1px;
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,.05);
+    padding: 1rem;
+    margin-bottom: 17px;
+}

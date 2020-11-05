@@ -1,0 +1,137 @@
+/*=============================================
+=           NEWS SCSS            =
+=============================================*/
+.news-event__day {
+    ul {
+        list-style: none;
+
+        li {
+            font-size: 13px;
+            color: $gray-600;
+            padding: 5px 0px;
+        }
+    }
+
+    .d-flex {
+        li {
+            font-size: 13px;
+            color: $gray-600;
+            padding: 5px 0px;
+            margin-right: 10px;
+        } 
+    }
+}
+
+.news {
+    h3 {
+        a {
+            color: black;
+            &:hover {
+                color: $main;
+                text-decoration: none;
+            }
+        }
+    }
+
+    background-image: url('../images/news/back.png');
+    position: relative;
+    overflow: hidden;
+
+    &.no-back::before {
+        display: none;
+    }
+
+    &:before {
+        content: '';
+        background-image: url(../images/news/dot-top.png);
+        position: absolute;
+        top: -36%;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation: pulse 2s infinite;
+        animation-duration: 4s;
+    }
+
+    &:after {
+        content: '';
+        background-image: url(../images/news/dot-bottom.png);
+        position: absolute;
+        bottom: -36%;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation: pulse 2s infinite;
+        animation-duration: 4s;
+    }
+
+    &.no-back::after {
+        display: none;
+    }
+
+    &__tt {
+        position: relative;
+        display: inline-block;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 14px;
+            right: -84px;
+            height: 2px;
+            width: 80px;
+            background: $main;
+        }
+    }
+
+    &__img {
+        overflow: hidden;
+
+        &.news_list {
+            overflow: unset;
+
+            img {
+                border-radius:unset ;
+            }
+        }
+
+        img {
+            border-radius: 9%;
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    &__typho {
+        line-height: 28px;
+    }
+
+    @include mediaMd {
+        .Utbtn_main {
+            margin-bottom: 20px;
+        }
+    }
+
+
+    &.news_list {
+        .news_item {
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        .news_des {
+            padding: 15px;
+
+            h3 {
+                margin-top: 0px !important;
+            }
+        }
+    }
+
+}
+
+
+
+/*=====  End of Section NEWS SCSS  ======*/

@@ -1,0 +1,110 @@
+/*=============================================
+=            OWL-CAROUSEL             =
+=============================================*/
+.owl-carousel.has-owl .owl-nav button.owl-next:hover {
+    right: -40px;
+    width: 60px;
+    height: 60px;
+    transition-timing-function: ease-out;
+    transition: 0.4s;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.07), 0 10px 10px rgba(0, 0, 0, 0.06);
+}
+.owl-carousel.has-owl .owl-nav button.owl-prev:hover {
+    left: -40px;
+    width: 60px;
+    height: 60px;
+    transition-timing-function: ease-out;
+    transition: 0.4s;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.07), 0 10px 10px rgba(0, 0, 0, 0.06);
+}
+
+.owl-carousel {
+
+    position: relative;
+
+    // .owl-nav {
+    //     .owl-prev {
+    //         @extend .owl-nav-left-bt;
+    //         bottom: 50px;
+    //         height: 30px;
+    //         width: 30px;
+    //         border-radius: 20px;
+    //         color: white;
+    //         color: white !important;
+    //         background-color: $main !important;
+    //         transition: 0.4s;
+    //     }
+
+    //     .owl-next {
+    //         @extend .owl-nav-left-bt;
+    //         left: 80px;
+    //         bottom: 50px;
+    //         height: 30px;
+    //         width: 30px;
+    //         border-radius: 20px;
+    //         color: white !important;
+    //         background-color: $main !important;
+    //         transition: 0.4s;
+    //     }
+    // }
+}
+
+.owl-carousel {
+
+    overflow: hidden;
+
+    &.has-owl {
+        &:hover {
+            .owl-nav {
+                .owl-prev {
+                    
+                    transition-timing-function: ease-out;
+                    @include easeOut;
+                    left: 0px !important;
+
+                    &:focus {
+                        outline: 0px;
+                    }
+                }
+                .owl-next {
+
+                    transition-timing-function: ease-out;
+                    @include easeOut;
+                    right: 0px !important;
+
+                    &:focus {
+                        outline: 0px;
+                    }
+                }
+            }
+        }
+
+        .owl-nav {
+            .owl-prev {
+                @extend .owl-nav-between;
+                height: 50px;
+                width: 50px;
+                left: -50px !important;
+                color: black !important;
+                background: none;
+                font-size: 30px;
+                @include easeOut;
+                background-color: unset !important;
+            }
+
+            .owl-next {
+                @extend .owl-nav-between;
+                height: 50px;
+                width: 50px;
+                right: -50px !important;
+                color: black !important;
+                background: none;
+                font-size: 30px;
+                @include easeOut;
+                background-color: unset !important;
+            }
+        }
+    }
+}
+
+/*=====  End of OWL-CAROUSEL  ======*/

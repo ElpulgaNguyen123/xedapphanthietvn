@@ -1,0 +1,117 @@
+/*=============================================
+=           HEADER CSS START           =
+=============================================*/
+
+header {
+
+    &.header {
+        &.fixed-show {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+            background: white !important;
+        }
+    }
+
+    .navbar {
+        &.fixed-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 99;
+        }
+    }
+
+}
+
+.navbar.navbar-light {
+
+    border-top: 1px solid #6c757d17;
+    border-bottom: 1px solid #6c757d17;
+    padding: 0rem 1rem;
+    background: transparent !important;
+
+    .navbar-brand {
+        .logo {
+            img {
+                max-width: 300px;
+            }
+            @include mediaMd {
+
+                img {
+                    max-width: 150px;
+                }
+
+            }
+        }
+    }
+
+    @include mediaMd {
+        padding: 5px 15px;
+
+        .navbar-toggler-icon {
+            width: 1em;
+            height: 1em;
+        }
+    }
+}
+
+.navbar-nav {
+
+    .nav-item {
+
+        display: inline-block;
+        margin-left: 30px;
+
+        @include mediaMd {
+            margin-left: 0px;
+        }
+
+        .nav-link {
+            font-size: 15px;
+            font-weight: 600;
+            color: $main-blue;
+            display: block;
+            padding: 30px 0;
+            font-weight: 500;
+            position: relative;
+            -webkit-transition: .3s all;
+            transition: .3s all;
+            font-weight: 700;
+
+            span {
+                display: none;
+            }
+        }
+
+        @include mediaMd {
+            .nav-link {
+                padding: 10px 0;
+
+                span {
+                    display: inline-block;
+                    margin-right: 20px;
+                    color: white;
+                    border-radius: 10px;
+                    background: $main;
+                    width: 20px;
+                    height: 20px;
+                    text-align: center;
+                    font-size: 13px;
+                }
+            }
+
+        }
+
+
+        &.active {
+            .nav-link {
+                color: $main;
+            }
+        }
+    }
+}
+
+/*=====  HEADER CSS END  ======*/

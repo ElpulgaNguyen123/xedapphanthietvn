@@ -1,0 +1,13 @@
+.brand {
+
+    &__item {
+        border-radius: 20px;
+        box-shadow: 30px 30px 72px #ebebeb,
+            -30px -30px 72px #ffffff;
+            margin-bottom: 20px;
+
+        img {
+            border-radius: 20px;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+
+
+
+.menu-mobie {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 9999;
+    padding:5px;
+    display:none;
+    box-shadow: 0px 7px 2px #8888883d, 0px 0px 5px #88888861;
+
+
+    @include mediaMd {
+        display:block;
+    }
+
+    ul {
+        display:flex;
+        justify-content: content;
+        margin-bottom: 0px;
+
+        li {
+            padding: 5px;
+            flex: 1;
+            flex-direction:row;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding:10px 0px;
+                color: $main;
+
+                &:hover {
+                    text-decoration: none;
+                    background:$main;
+                    color:white;
+
+                    span {
+                        color:white !important;
+                    }
+                }
+
+                i {
+                    font-size:20px;
+                }
+
+                span {
+                    font-size:12px;
+                    color:black;
+                }
+            }
+        }
+    }
+}

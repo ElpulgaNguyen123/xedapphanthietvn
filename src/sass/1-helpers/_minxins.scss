@@ -1,0 +1,134 @@
+
+@keyframes pulse {
+	0% {
+        transform: translateY(10px);
+    }
+	70% {
+		transform: translateY(20px);
+	}
+	100% {
+		transform: translateY(10px);
+	}
+}
+
+@keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+
+    40% {
+        opacity: 0.5;
+    }
+
+    100% {
+        box-shadow: 0 0 0 2px rgba(236, 85, 152, 0.1), 0 0 10px 10px rgba(0, 0, 0, .3), 0 0 0 10px rgba(236, 85, 152, 0.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes socialFxD {
+    49% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%)
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%)
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+.owl-button {
+    right: 20px;
+    position: absolute;;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,.3) !important;
+    width: 40px;
+    border-radius: 10px;
+    height: 40px;
+    text-align: center;
+    color: white !important;
+}
+
+
+/* owl start */
+
+.owl-nav-between {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.owl-nav-left-bt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.two-line {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden; 
+}
+
+/* owl end */
+
+@mixin mixinTwoLine {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+@mixin easeOut {
+    transition: all 0.4s ease-out;
+    transition-delay: .5s;
+}
+
+@mixin mediaSm {
+    @media screen and (max-width:500px) {
+        @content;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1190px;
+    }
+}
+
+@mixin mediaMd {
+    
+    @media (max-width:768px) {
+        @content;
+    }
+}
+
+@mixin minMediaMd {
+    @media (min-width:768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media (max-width:1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media(min-width:1200px) {
+        @content;
+    }
+}   

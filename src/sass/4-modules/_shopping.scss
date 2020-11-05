@@ -1,0 +1,125 @@
+/*=============================================
+=            SHOPPING CSS            =
+=============================================*/
+
+
+.soph {
+    &--white {
+        background: white;
+        position: relative;
+        // top: -50px;
+        // box-shadow:  20px 19px 60px #d9d9d9, -20px -20px 60px #ffffff00
+    }
+    &__color {
+        li {
+            display: inline-block;
+
+            span {
+                padding: 10px;
+                margin-right: 10px;
+                display: block;
+                border-radius: 2px;
+
+                &:hover {
+                    border-radius: 50%;
+                    transition: 0.4s;
+                }
+            }
+
+            .red {
+                background: #C5171C;
+            }
+
+            .yellow {
+                background: #F3D131;
+            }
+
+            .blue {
+                background: #077D9B;
+            }
+
+            .black {
+                background: black;
+            }
+        }
+    }
+
+    &-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mediaMd {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .price {
+            flex: 2;
+            font-size: 20px;
+        }
+
+        @include mediaMd {
+            .price {
+                font-size: 15px;
+            }
+        }
+
+        .status {
+            font-size: 12px;
+            color: grey;
+            flex: 1;
+        }
+    }
+
+    &__box {
+        margin-bottom: 20px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 4px;
+    }
+
+    &__it {
+        background: white;
+        margin-bottom: 20px;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        padding: 15px;
+        border-bottom: 1px solid #80808012;
+    }
+
+
+    &__tt {
+        font-size: 16px;
+        line-height: 25px;
+
+        a {
+            color: black;
+            @include mixinTwoLine;
+
+            &:hover {
+                color: $main;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__ct {
+        padding: 15px;
+    }
+
+    &__img {
+        padding: 20px;
+    }
+
+    .line-clamp {
+        @include mixinTwoLine;
+    }
+}
+
+/*=====  END SHOPPING CSS   ======*/

@@ -1,0 +1,48 @@
+.sr_tabs {
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 21px 21px 42px #ededed,
+        -21px -21px 42px #ffffff;
+}
+
+#ser {
+    background-image: url('../images/slider/03.jpg');
+    background-position: center;
+}
+.sr_tabs_lt {
+
+    border-bottom: 0px;
+
+    .nav-item {
+        .nav-link {
+            margin: 20px 0px;
+            margin-right: 20px;
+            border: 0px;
+            border-radius: 20px;
+            background: #ffffff;
+            box-shadow: 21px 21px 42px #ededed,
+                -21px -21px 42px #ffffff;
+
+            &:hover {
+                background: $main-blue;
+                color: white;
+            }    
+
+            &.active {
+                background: $main;
+                color: white;
+            }
+        }
+    }
+}
+
+.rt_ {
+    &ct {
+        padding: 50px;
+
+        .price {
+            color: $main;
+            font-size: 30px;
+        }
+    }
+}

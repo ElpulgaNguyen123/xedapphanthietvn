@@ -1,0 +1,83 @@
+.contact {
+
+    .contact-box {
+        padding: 5px 0 5px 60px;
+        position: relative;
+        width: 100%;
+        min-height: 59px;
+        display: flex;
+        align-items: center;
+
+        .icon {
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            transform: translate(0, -50%);
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 36px;
+            border: 1px dashed $main;
+            border-radius: 50%;
+            color: #d92329;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+
+        a {
+            margin-bottom: 0;
+            color: #777;
+
+            &:hover {
+                text-decoration: none;
+                color: $main;
+            }
+        }
+    }
+   
+    @include mediaMd{
+        .form-signup {
+            margin-top:40px
+        }
+    }
+    .form-signup {
+
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 40px;
+
+    
+        label {
+            font-size: 12px;
+            color: $gray-600;
+            font-weight: 600;
+        }
+
+
+        .form-control {
+            margin: 0px 0;
+            padding: 20px 10px;
+            width: 100%;
+            border: 1px solid #80808014;
+            outline: none;
+            font-size: 13px;
+            border-radius: 5px;
+            display: inline-block;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -ms-transition: 0.2s ease all;
+            -o-transition: 0.2s ease all;
+            transition: 0.2s ease all;
+        }
+
+        @include mediaMd{
+            .btn-send {
+                text-align: center;
+            }
+        }
+    }
+}

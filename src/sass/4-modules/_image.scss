@@ -1,0 +1,16 @@
+$base-color: #036;
+
+.img_bx {
+    position: relative;
+
+    @for $i from 1 through 3 {
+        .img_tt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: lighten($base-color, $i * 5%);
+            color: white;
+            padding: 5px 20px;
+        }
+    }
+}

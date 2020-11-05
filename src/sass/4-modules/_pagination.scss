@@ -1,0 +1,21 @@
+.pagination {
+
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid $gray-200;
+    border-radius: 0px;
+
+    .page-link {
+        border: 0px;
+        padding: 10px 15px;
+        color: black;
+        font-weight: 500;
+    }
+    .page-item.active .page-link {
+        z-index: 3;
+        color: #fff;
+        background-color: $main;
+        border-color: $main;
+        padding: 10px 15px;
+    }
+}

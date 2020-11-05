@@ -1,0 +1,36 @@
+.header__top {
+
+    padding:5px 0px;
+
+    .header__contc {
+
+        ul {
+            margin-bottom: 0px;
+        }
+    
+        .social {
+            li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    
+        @include mediaMd {
+            a {
+                color: white;
+                font-size: 12px;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        a {
+            color: white;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    
+    }
+}
